@@ -1,6 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+// My First button in the First React APP
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onclick = {handleClick}>LINK</button>
+  );
+
+}
+
 function App() {
   return (
     <div className="App">
@@ -17,9 +29,12 @@ function App() {
         >
           Learn React
         </a>
+        <MyButton />
+        
       </header>
     </div>
   );
+
 }
 
 export default App;
